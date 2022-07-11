@@ -24,8 +24,18 @@ public class Coins{
         }
         return counter;
     }
-    public String toString(){
-        return ("hi");
+    // now we need to write a toString that turns the true to H and false to T and retuns a string
+    public static String toString(boolean [] coins){
+        String s = "";
+        for(boolean i : coins){
+            if(i == true){
+                s += "H";
+            }else{
+                s += "H";
+            }
+            
+        }return(s);
+
     }
     
 
