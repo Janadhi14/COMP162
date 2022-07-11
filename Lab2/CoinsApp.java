@@ -10,4 +10,5 @@ public class CoinsApp{
      Coins c = new Coins(coinTosses);
      System.out.println(c.countHeads());
   }
+  
 }

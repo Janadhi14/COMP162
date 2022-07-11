@@ -13,8 +13,20 @@ public class Coins{
     public Coins(boolean[] coins) {
         this.coins = coins;
     }
-    public static void countHeads(){
-        for(int)
+    // need to write a for loop which will go through the array and use a counter variable and if statement to increment 
+    public int countHeads(boolean [] coins){
+        int counter = 0;
+        for(int i = 0; i<coins.length; i++){
+            if(coins[i] == true){
+                counter =+ 1 ; // incrementing 
+            }
+            
+        }
+        return counter;
     }
+    public String toString(){
+        return ("hi");
+    }
+    
 
 }
