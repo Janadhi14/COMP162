@@ -9,7 +9,7 @@ public class CoinsApp{
       
      Coins c = new Coins(coinTosses);
      System.out.println(c.countHeads(coinTosses));
-     c.toString();
+     System.out.println(c);
   }
   
   
