@@ -33,7 +33,7 @@ public class Bicycle{
         return wheelDia; // returning the wheel diameter
     }
     public static String isElectric2(boolean electric){
-        if(electric = true){ // checking if the parameter is electric 
+        if(electric == true){ // checking if the parameter is electric 
             return "Electric"; // returns a string if it's electric 
         }else{
             return "Push-Bike"; // returning pushbike if its not true 
