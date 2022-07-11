@@ -1,11 +1,12 @@
 public class BicycleApp{
     public static void main(String[] args){
-        Bicycle [] Bikes = {new Bicycle(610, false),
-            new Bicycle(697,true),
-            new Bicycle(660,false)};
+        Bicycle [] Bikes = {new Bicycle("red",610, true),
+            new Bicycle("blue",660,false),
+            new Bicycle("pink",610,false)};
         for(Bicycle bike: Bikes){
             System.out.println(bike);
         }
+        
             
     }
     // write a second method 
