@@ -14,7 +14,7 @@ public class Coins{
         this.coins = coins;
     }
     public static void countHeads(){
-        for(int 1 = 0l)
+        for(int)
     }
 
 }
