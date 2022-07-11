@@ -11,17 +11,17 @@ public class Bicycle{
     Bicycle(){}
 
     Bicycle(int wheelDia, boolean electric ){
-        this.wheelDia = wheelDia;
-        this.electric = electric;
-
+        this.wheelDia = wheelDia; // setting the wheel diameter
+        this.electric = electric; // setting the parameters
     }
+
     public void setColour(){
         Scanner sc = new Scanner(System.in); // creating a scanner 
-        String newcolour = sc.nexLine(); // setting the new colour equal to teh input from the scanner.
+        String newcolour = sc.nexLine("what colour is the bicycle?:"); // setting the new colour equal to teh input from the scanner.
         String colour = newcolour; // setting the colour to the new scanner 
     }
     public boolean isElectric(){
-        return electric = true;   
+        return electric;   
     }
 
     public double getImperial(){
@@ -33,14 +33,15 @@ public class Bicycle{
     public String isElectric2(boolean electric){
         if(electric = true){ // checking if the parameter is electric 
             return "Electric"; // returns a string if it's electric 
-        }else:{
+        }else{
             return "Push-Bike"; // returning pushbike if its not true 
         }
     }
     
     public String toString(){
         return ("Bicycle is" + colour + ". Wheel size is" + getMetric() +  "inches." + isElectric2());
-    } 
+    }
+    
     
 
 
