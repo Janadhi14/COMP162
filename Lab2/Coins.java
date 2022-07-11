@@ -31,10 +31,10 @@ public class Coins{
             if(coins[i] == true){
                 s += 'H'; // adds an H to the string s
             }else{
-                s += "T"; // adds a T i 
+                s += "T"; // adds a T to the string s 
             }
             
-        }return(s);
+        }return(s); // returns a string 
 
     }
     
