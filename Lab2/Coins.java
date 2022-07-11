@@ -18,23 +18,23 @@ public class Coins{
         int counter = 0;
         for(int i = 0; i<coins.length; i++){
             if(coins[i] == true){
-                counter =+ 1 ; // incrementing 
+                counter+=1; // incrementing 
             }
             
         }
         return counter;
     }
     // now we need to write a toString that turns the true to H and false to T and retuns a string
-    public static String toString(boolean [] coins){
+    public void toString(boolean [] coins){
         String s = "";
         for(boolean i : coins){
             if(i == true){
-                s += "H";
+                s += 'H';
             }else{
-                s += "H";
+                s += 'T';
             }
             
-        }return(s);
+        }System.out.println(s);
 
     }
     

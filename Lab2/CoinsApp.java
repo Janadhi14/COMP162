@@ -8,7 +8,9 @@ public class CoinsApp{
       boolean[] coinTosses = {true, false, true, false, true, true, false, false, false, true};
       
      Coins c = new Coins(coinTosses);
-     System.out.println(c.countHeads());
+     System.out.println(c.countHeads(coinTosses));
+     c.toString();
   }
+  
   
 }
