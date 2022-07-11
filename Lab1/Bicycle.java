@@ -12,13 +12,14 @@ public class Bicycle{
 
     Bicycle(int wheelDia, boolean electric ){
         this.wheelDia = wheelDia; // setting the wheel diameter
-        this.electric = electric; // setting the parameters
+        this.electric = electric;
+        // setting the parameters
     }
 
     public void setColour(){
         Scanner sc = new Scanner(System.in);
         System.out.println("what colour do you want the bike ");
-        colour = sc.nextLine(); // setting the new colour equal to teh input from the scanner.
+        this.colour = sc.nextLine(); // setting the new colour equal to teh input from the scanner.
    // setting the colour to the new scanner 
    
         
@@ -40,9 +41,17 @@ public class Bicycle{
             return "Push-Bike"; // returning pushbike if its not true 
         }
     }
-    
+    // if the bike is electric then string == ""
+    public String metricOrImperial(){
+        if(electric == true){ 
+            return "inches";// retunrs imperail
+        } else{
+            return "mm"; // retruns metric if the bike is a pushbike 
+
+        }
+    }
     public String toString(){
-        return ("Bicycle is " + colour + ". Wheel size is " + getMetric() +  "inches. " + isElectric2(isElectric()));
+        return ("Bicycle is " + colour + ". Wheel size is " + getMetric() +  metricOrImperial() + isElectric2(isElectric()));
     }
     
     
