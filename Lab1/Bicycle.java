@@ -1,14 +1,14 @@
 import java.util.Scanner;
-
+    
 
 public class Bicycle{
-    public static void main(String [] args){
-        private int wheelDia;
-        private boolean electric;
-        private String colour;
+    private int wheelDia;
+    private boolean electric;
+    private String colour;
 
-    }
-    Bicycle();
+        
+    
+    Bicycle(){}
 
     Bicycle(int wheelDia, boolean electric ){
         this.wheelDia = wheelDia;
