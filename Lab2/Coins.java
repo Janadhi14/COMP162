@@ -22,19 +22,19 @@ public class Coins{
             }
             
         }
-        return counter;
+        return counter; //retruns the counter variable that has been incremented 
     }
     // now we need to write a toString that turns the true to H and false to T and retuns a string
-    public void toString(boolean [] coins){
-        String s = "";
-        for(boolean i : coins){
-            if(i == true){
-                s += 'H';
+    public String toString(boolean [] coins){
+        String s= ""; // creating an empty string
+        for(int i = 0; i < coins.length ; i++){
+            if(coins[i] == true){
+                s += 'H'; // adds an H to the string s
             }else{
-                s += 'T';
+                s += "T"; // adds a T i 
             }
             
-        }System.out.println(s);
+        }return(s);
 
     }
     
