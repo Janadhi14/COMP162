@@ -16,11 +16,12 @@ public class Bicycle{
     }
 
     public void setColour(){
-        System.out.println("what colour is the bicycle?:");
-        try (Scanner sc = new Scanner(System.in)) {
-            colour = sc.next(); // setting the new colour equal to teh input from the scanner.
-            // setting the colour to the new scanner 
-        }
+        Scanner sc = new Scanner(System.in);
+        System.out.println("what colour do you want the bike ");
+        colour = sc.nextLine(); // setting the new colour equal to teh input from the scanner.
+   // setting the colour to the new scanner 
+   
+        
     }
     public boolean isElectric(){
         return electric;   
