@@ -22,26 +22,26 @@ public class Bicycle{
     }
     public boolean isElectric(){
         return electric = true;   
-        }
     }
+
     public double getImperial(){
-        return (wheelDia/25.4); // wheel diameter 
+        return (wheelDia/25.4); // wheel diameter returning
     }
     public int getMetric(){
-        return wheelDia;
+        return wheelDia; // returning the wheel diameter
     }
     public String isElectric2(boolean electric){
-        if(electric = true){
-            return "Electric";
+        if(electric = true){ // checking if the parameter is electric 
+            return "Electric"; // returns a string if it's electric 
         }else:{
-            return "Push-Bike";
+            return "Push-Bike"; // returning pushbike if its not true 
         }
     }
     
     public String toString(){
-        return ("Bicycle is" + colour + ". Wheel size is" + getMetric() +  "inches." + isElectric2())
-    }
-
+        return ("Bicycle is" + colour + ". Wheel size is" + getMetric() +  "inches." + isElectric2());
+    } 
+    
 
 
 
