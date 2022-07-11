@@ -1,6 +1,6 @@
 public class BicycleApp{
     public static void main(String[] args){
-        Bicycle [] Bikes = {new Bicycle("red",610, true),
+        Bicycle [] Bikes = {new Bicycle("red",697, true),
             new Bicycle("blue",660,false),
             new Bicycle("pink",610,false)};
         for(Bicycle bike: Bikes){
@@ -17,12 +17,12 @@ public class BicycleApp{
         for (Bicycle bike: Bikes){
             if (bike.getMetric() > largestbike.getMetric()){
                largestbike = bike;
-               System.out.println("largest bike: " + largestbike.toString()); 
+               
         }
         
-        // retruns the string that displays the infomration about the last bike 
+        
     }
-
+    System.out.println("largest bike: " + largestbike.toString()); 
     }
 }
 
