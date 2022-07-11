@@ -10,15 +10,16 @@ public class Bicycle{
     
     Bicycle(){}
 
-    Bicycle(int wheelDia, boolean electric ){
+    Bicycle(String colour,int wheelDia, boolean electric ){
         this.wheelDia = wheelDia; // setting the wheel diameter
         this.electric = electric;
+        this.colour = colour;
         // setting the parameters
     }
 
     public void setColour(){
         Scanner sc = new Scanner(System.in);
-        System.out.println("what colour do you want the bike ");
+        System.out.println("what colour do you want the  bike ");
         this.colour = sc.nextLine(); // setting the new colour equal to teh input from the scanner.
    // setting the colour to the new scanner 
    
@@ -51,7 +52,7 @@ public class Bicycle{
         }
     }
     public String toString(){
-        return ("Bicycle is " + colour + ". Wheel size is " + getMetric() +  metricOrImperial() + isElectric2(isElectric()));
+        return ("Bicycle is " + colour + ". Wheel size is " + getMetric() + " " + metricOrImperial() + ". " + isElectric2(isElectric()));
     }
     
     
