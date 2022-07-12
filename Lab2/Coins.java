@@ -46,10 +46,10 @@ public class Coins{
         // create a new array that will turn the char 
         Scanner sc = new Scanner(c); // scanning thorugh the string
         // need to create an array that will be the lenght of the string 
-        char[] n = new char[c.length()];
-        for (int j = 0; j <= c.length() - 1; j++) 
-        { char c1 = c.charAt(j);
-           n[j] = c1;
+        char[] n = new char[c.length()]; // initilize the array 
+        for (int x = 0; x <= c.length(); x++){ 
+            char c1 = c.charAt(x);
+            n[x] = c1;
         }
 
         // now we want to go through the char array and make a new boolarr that contains the heats and tails that correspond 
