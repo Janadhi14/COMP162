@@ -47,12 +47,28 @@ public class Coins{
         Scanner sc = new Scanner(c); // scanning thorugh the string
         // need to create an array that will be the lenght of the string 
         char[] n = new char[c.length()];
-        for (int j = 0; j <= l - 1; j++) 
+        for (int j = 0; j <= c.length() - 1; j++) 
         { char c1 = c.charAt(j);
            n[j] = c1;
         }
-        // now we want to go through teh char array and see if it 
-        return n;
+
+        // now we want to go through the char array and make a new boolarr that contains the heats and tails that correspond 
+        //creating boolarr
+        boolean [] boolarr = new boolean[c.length()]; // same length as the string 
+        // now we need a for loop with if statements 
+        for(int i = 0; i < c.length(); i++){
+            if(n[i] =='H'){
+                boolarr[i] = true; //if heads the posiiton will be heads 
+            }
+            if(n[i] == 'T'){
+                boolarr[i] = false;
+            } else{
+              System.out.println("please enter H or T only");  
+            }
+        }
+
+        return boolarr;
+        
         // now we need to create a loop which will go through that array and create a new array that/ that is of the same length and corresponds to the 
 
     }
