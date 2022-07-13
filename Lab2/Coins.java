@@ -64,7 +64,16 @@ public class Coins {
     }
 
     /* Constructs a Coins object consisting of a series of length coins */
-    public Coins(int length) {
+    public int countruns() {
+        int counter = 0;
+        for (int g = 0; g < (coins.length - 1); g++) {
+            // we want to now compare the current
+            if (coins[g] != coins[g + 1]) {
+                counter++; // we want to increment the counter by 1 if there is a switch
+            }
+        }
+        return counter;
+
         // this constructor should create a coins object consisiting of a series of
         // length coins
 
