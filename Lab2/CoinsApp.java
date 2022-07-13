@@ -9,8 +9,8 @@ public class CoinsApp{
       
      Coins c = new Coins(coinTosses);
      System.out.println(c.countHeads(coinTosses));
-     System.out.println(c.toString(coinTosses)); // calling the to string method 
-     Coins g = new Coins("HTTHHTT"); // a string that contains heads and tails 
+     System.out.println(c); // calling the to string method 
+     Coins g = new Coins("HTTHHTT"); // a string that contains heads and tails  
      System.out.println(g.toString());
   }
   
