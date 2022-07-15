@@ -27,9 +27,3 @@ public class BicycleApp{
 }
 
 
-// based on the largest item in an array loop function 
-/*Box largestBox = boxes[0]; // decalrinign a vairable of type box that keeps track of the largest box, similar to the temps , whre we set the largest box to a size of 0
-        for (Box box: boxes){
-            if (box.getVolume() > largestBox.getVolume()){ // calling the getvolum method adn check against teh current box that is being run 
-                // so that if the current box is larger than the previous largest box it becomes the alrgest box 
-                largestBox =  box; */
