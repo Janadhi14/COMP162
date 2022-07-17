@@ -6,7 +6,7 @@ public class AntJourney{
 
     AntJourney(String id, int numPoints){
         this.antId = id;
-        this.
+        this.journey = new Point [numPoints];
     }
     public String getId(){
         return antId;
