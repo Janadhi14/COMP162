@@ -29,7 +29,7 @@ public class AntJourney{
         return shortest;
     }
     public double getLongestDistance(){
-        for(ant )
+        for(ant : )
         
         
         return longest;
