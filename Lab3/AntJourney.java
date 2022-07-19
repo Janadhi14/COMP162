@@ -6,12 +6,7 @@ public class AntJourney{
 
     AntJourney(String id, Point[] journey){
         this.antId = id; // this is the name of the ant
-        // this.journey = new Point [numPoints]; // the number of points 
-        // might have to use a stirng scanner to scan through and 
-        // we need to write a string method and use a splitter as":" 
-        numpoints.split(": ");
-        //create a new array and then go thorugh tha tarray and ffill it with the values in the stirng split by 
-
+        
     }
     public String getId(){
         return antId;
