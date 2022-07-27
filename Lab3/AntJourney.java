@@ -1,3 +1,4 @@
+import java.io.File;
 import java.util.ArrayList; // importing arraylist class
 import java.util.Scanner;// importing scanner 
 
@@ -11,35 +12,9 @@ public class AntJourney {
 
     // main constructor
     AntJourney(String id, Point[] journey) {
-        this.antId = id; // this is the name of the ant
-        // need to create an array of coordinates
-        Point[] journeyData = new Point[1];
-        // now we need to try read a file
-        try {
-            // want to create a scanner
-
-            Scanner san = new Scanner(new Flie("AntJourneys.txt"));
-            // creating a string for each line
-            // we need to run a while loop
-            while (sc.hasNextLine()) {
-                String line = sc.nextLine();
-                // now we want to scan through the line
-                Scanner Linescan = new Scanner(line);
-                // need to use a delimiter
-                Linescan.useDelimiter(":");
-                // we first need to set the first portion of the string as the id
-                journeyData[0] = new Point[numOfToken(line) + 1];
-
-            }
-
-        } catch (Exception e) {
-            // TODO: handle exception
-            System.out.println("there is some error in the format of the file");
-
-        }
-        {
-
-        }
+        // what we need this method to do is to take in the string and then convert the first item into the id  
+        this.antId = id;
+        this.journey =  journey;
     }
 
     public String getId() {
@@ -47,13 +22,24 @@ public class AntJourney {
     }
 
     public void setId(String id) {
-        this.antId = id;
+        this.antId = id; // setting the antid to a string called id 
     }
 
-    public double getDistanceTravelled() {
+    public double getDistanceTravelled(){
         double distance = 0; // initilizing a variable called distance
         // now we want to go through the coordinates and calculate the distance between
-        // each
+        // we need to return the distance variable after using teh point 
+        distance += Math.sqrt(((0 - journey[0].getX()) * 2) + ((0 - journey[0].getY()) * 2)); // adding the distance from 0,0 to the first point 
+        for(int p = 0; p < journey.length - 1; p++){
+            distance += journey[p].distanceToOtherPoint(journey[p+1]);
+
+            } 
+
+            //now we need to add the distance form p-1 (0,0) to p1
+            
+            //we also need to add the distance to the end point 
+
+        // takes in 2 points 
         return distance;
     }
 
@@ -61,8 +47,8 @@ public class AntJourney {
         double shortest = 0.0; // initilizing a length equal to 0.0
         // we want to go thorugh every ant in here and for every ant in this array we want to return the shortest distance 
 
-        for( : ){ 
-            if(ant.distanceToOtherPoint()< shortest);
+        for()  { 
+            if(ant.distanceToOtherPoint() < shortest);
             shortest = ant.distanceToOtherPoint();
         }
         return shortest;
@@ -70,18 +56,8 @@ public class AntJourney {
 
     public double getLongestDistance(){
         int longest = 0; // initilizing the longest variable 
-        // we want to run a for loop and 
-        for(int i = 0; i.length(), i++){
-            // we want to use the distance bewteentwopoints method and compare the distance between
-            // n[i] and n[i+1] adn set this to a varible as current 
-            // we want to set this to longest and then 
-            // need to pass in 2 polint variables 
-        }
-
-    }
-    //
-
-    return longest;
+        // we want to run a for loop and initially set the longest distance to one of the distances form point 0,0 to point n1
+        return longest;
 
     }
 
@@ -89,6 +65,6 @@ public class AntJourney {
     public String toString(){
         return (andId + );
     }
-
-
+        
+        
 }
