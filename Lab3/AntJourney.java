@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 import java.io.File;
 import java.util.ArrayList; // importing arraylist class
+=======
+>>>>>>> e191aa2 (slow)
 import java.util.Scanner;// importing scanner 
 
 public class AntJourney {
@@ -12,9 +15,47 @@ public class AntJourney {
 
     // main constructor
     AntJourney(String id, Point[] journey) {
+<<<<<<< HEAD
         // what we need this method to do is to take in the string and then convert the first item into the id  
         this.antId = id;
         this.journey =  journey;
+=======
+        String id =""; 
+        Point[] journeyData = new Point[1];
+        try{
+           Scanner scan = new Scanner(new File("AntJourneys.txt"));
+           while(scan.hasNextLine()){
+              String line = scan.nextLine();
+              Scanner lineScan = new Scanner(line);
+              lineScan.useDelimiter(": ");
+              id = lineScan.next();
+              journeyData = new Point[numOfToken(line)+1];
+              int i=1;
+              journeyData[0] = new Point(0,0);
+              journeyData[numOfToken(line)] = new Point(0,0); // for a given point 
+              while(lineScan.hasNext()){
+                 Scanner numScan = new Scanner(lineScan.next());
+                 numScan.useDelimiter(",");
+                 journeyData[i] = new Point(numScan.nextInt(), numScan.nextInt());
+                 i++;
+              }
+              AntJourney ant = new AntJourney(id, journeyData);
+              System.out.println("Details for: "+ ant.getId()); // printing out the details
+              System.out.println("Shortest leg: "+ ant.getShortestLeg()); //now printing out the shortest leg 
+              System.out.println("Longest leg: "+ ant.getLongestLeg()); // now printing out the longest leg 
+              System.out.println("Total Distance: "+ ant.getDistanceTravelled());
+              System.out.println("--- --- --- --- --- --- --- ---");
+           }
+        } catch(IOException e){
+           System.out.println("File not found");
+        }
+        } catch (Exception e) {
+            // prints out the exception message 
+            System.out.println("there is some error in the format of the file");
+
+        }
+
+>>>>>>> e191aa2 (slow)
     }
 
     public String getId() {
